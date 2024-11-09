@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>HL Ask Me v1</title>
+  </head>
+  <body>
+    <div class="chat-container"></div>
+    <div class="typing-container">
+      <div class="typing-textarea">
+        <textarea
+          id="chat-input"
+          spellcheck="false"
+          placeholder="اطرح سؤالك"
+          required
+        ></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+      <div class="typing-content">
+        <div class="word_limit">
+          <input
+            type="number"
+            class="form-control mr-2"
+            id="word_limit"
+            placeholder="عدد الكلمات "
+          />
+        </div>
+        <div class="typing-controls">
+          <span id="delete-btn" class="material-symbols-rounded">delete</span>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
